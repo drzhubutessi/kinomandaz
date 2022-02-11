@@ -1,4 +1,19 @@
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+$highlight : #FF4B4B;
+
 body {
     background-color: red;
+}
+
+.navbar{
+    font-family: Bahnschrift, sans-serif;
+}
+
+.navbar-brand{
+    font-size: 40px;
+}
+
+.active{
+    color: $highlight;
 }
