@@ -1,0 +1,45 @@
+$margin: 5vh;
+$font: Bahnschrift, sans-serif;
+$colorMain: #FF4B4B;
+
+.mainContainer{
+  margin: $margin;
+}
+
+.topContainer
+{
+  display: flex;
+  gap: 35vh;
+  margin: $margin;
+  flex-direction: row;
+  border-bottom: $colorMain solid 1px;
+  font-family: $font;
+}
+.selectContainer{
+  margin: $margin;
+  background-color: #dcdcdc;
+  font-family: $font;
+  flex-direction: column;
+}
+.adultContainer{
+  display: flex;
+  gap: 35vh;
+  margin: $margin;
+  flex-direction: row;
+  border-bottom: #868282 dotted 1px;
+  font-family: $font;
+}
+.flexStart{
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.flexCenter{
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.flexEnd{
+  margin-right: 0;
+  margin-left: auto;
+}

@@ -3,39 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>Nákup Lístků</title>
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
 <div class="mainContainer">
     <h2>Nákup vstupenek</h2>
-    <div class="selectContainer">
-        <div class="types">
-            <div>Typ</div>
-            <div>Cena</div>
-            <div>Množství</div>
-        </div>
-        <div>
-            <div>Negr</div>
-            <div>300 Kč</div>
-            <input type="number" id="tentacles" name="tentacles"
-                   min="10" max="100">
-        </div>
-        <div>
-            <div>Dítě</div>
-            <div>100 Kč</div>
-            <input type="number" id="tentacles2" name="tentacles"
-                   min="10" max="100">
-        </div>
-        <div>
-            <div>Senior</div>
-            <div>170 Kč</div>
-            <input type="number" id="tentacles3" name="tentacles"
-                   min="10" max="100">
-        </div>
-        <div>
-            <div>Student</div>
-            <div>180 Kč</div>
-            <input type="number" id="tentacles4" name="tentacles"
-                   min="10" max="100">
+    <div class="d-flex justify-content-center">
+        <div class="selectContainer d-flex justify-content-center align-content-center">
+            <div class="topContainer">
+                <div>Typ</div>
+                <div>Cena</div>
+                <div>Množství</div>
+            </div>
+            <div class="adultContainer d-flex">
+                <div class="flexStart">Dospělý</div>
+                <div class="flexCenter">300 Kč</div>
+                <input class="flexEnd" type="number" id="tentacles1" name="tentacles"
+                       min="0" max="20">
+            </div>
+            <div class="adultContainer">
+                <div class="flexStart">Dítě</div>
+                <div class="flexCenter">200 Kč</div>
+                <input class="flexEnd" type="number" id="tentacles2" name="tentacles"
+                       min="0" max="20">
+            </div>
+            <div class="adultContainer">
+                <div>Senior</div>
+                <div>200 Kč</div>
+                <input type="number" id="tentacles3" name="tentacles"
+                       min="0" max="20">
+            </div>
+            <div class="adultContainer">
+                <div>Student</div>
+                <div>180 Kč</div>
+                <input type="number" id="tentacles4" name="tentacles"
+                       min="0" max="20">
+            </div>
         </div>
     </div>
 </div>

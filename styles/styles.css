@@ -11118,8 +11118,48 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-body {
-  background-color: red;
+.mainContainer {
+  margin: 5vh;
+}
+
+.topContainer {
+  display: flex;
+  gap: 35vh;
+  margin: 5vh;
+  flex-direction: row;
+  border-bottom: #FF4B4B solid 1px;
+  font-family: Bahnschrift, sans-serif;
+}
+
+.selectContainer {
+  margin: 5vh;
+  background-color: #dcdcdc;
+  font-family: Bahnschrift, sans-serif;
+  flex-direction: column;
+}
+
+.adultContainer {
+  display: flex;
+  gap: 35vh;
+  margin: 5vh;
+  flex-direction: row;
+  border-bottom: #868282 dotted 1px;
+  font-family: Bahnschrift, sans-serif;
+}
+
+.flexStart {
+  margin-right: auto;
+  margin-left: 0;
+}
+
+.flexCenter {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.flexEnd {
+  margin-right: 0;
+  margin-left: auto;
 }
 
 .navbar {
