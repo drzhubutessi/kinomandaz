@@ -11119,21 +11119,22 @@ textarea.form-control-lg {
   }
 }
 .mainContainer {
-  margin: 5vh;
+  margin: 2vh;
 }
 
 .topContainer {
   display: flex;
   gap: 35vh;
-  margin: 5vh;
+  margin: 2vh;
   flex-direction: row;
   border-bottom: #FF4B4B solid 1px;
   font-family: Bahnschrift, sans-serif;
+  padding-bottom: 2vh;
 }
 
 .selectContainer {
-  margin: 5vh;
-  background-color: #dcdcdc;
+  margin: 2vh;
+  background-color: #ffffff;
   font-family: Bahnschrift, sans-serif;
   flex-direction: column;
 }
@@ -11141,25 +11142,36 @@ textarea.form-control-lg {
 .adultContainer {
   display: flex;
   gap: 35vh;
-  margin: 5vh;
+  margin: 2vh;
   flex-direction: row;
-  border-bottom: #868282 dotted 1px;
+  border-bottom: #868282 dotted 2px;
   font-family: Bahnschrift, sans-serif;
+  padding-bottom: 2vh;
 }
 
 .flexStart {
+  display: flex;
+  width: 10vh;
   margin-right: auto;
   margin-left: 0;
 }
 
 .flexCenter {
+  display: flex;
+  width: 10vh;
   margin-right: auto;
   margin-left: auto;
 }
 
 .flexEnd {
+  width: 10vh;
+  display: flex;
   margin-right: 0;
   margin-left: auto;
+}
+
+.buttons {
+  margin-left: 110vh;
 }
 
 .navbar {

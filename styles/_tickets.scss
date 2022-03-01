@@ -1,45 +1,61 @@
-$margin: 5vh;
+$margin: 2vh;
+$padding: 2vh;
 $font: Bahnschrift, sans-serif;
 $colorMain: #FF4B4B;
+$border-spacing: 5vh;
+$flexWidth: 10vh;
 
-.mainContainer{
+.mainContainer {
   margin: $margin;
 }
 
-.topContainer
-{
+.topContainer {
   display: flex;
   gap: 35vh;
   margin: $margin;
   flex-direction: row;
   border-bottom: $colorMain solid 1px;
   font-family: $font;
+  padding-bottom: $padding;
 }
-.selectContainer{
+
+.selectContainer {
   margin: $margin;
-  background-color: #dcdcdc;
+  background-color: #ffffff;
   font-family: $font;
   flex-direction: column;
 }
-.adultContainer{
+
+.adultContainer {
   display: flex;
   gap: 35vh;
   margin: $margin;
   flex-direction: row;
-  border-bottom: #868282 dotted 1px;
+  border-bottom: #868282 dotted 2px;
   font-family: $font;
+  padding-bottom: $padding;
 }
-.flexStart{
+
+.flexStart {
+  display: flex;
+  width: $flexWidth;
   margin-right: auto;
   margin-left: 0;
 }
 
-.flexCenter{
+.flexCenter {
+  display: flex;
+  width: $flexWidth;
   margin-right: auto;
   margin-left: auto;
 }
 
-.flexEnd{
+.flexEnd {
+  width: $flexWidth;
+  display: flex;
   margin-right: 0;
   margin-left: auto;
+}
+.buttons{
+ margin-left: 110vh;
 }

@@ -7,13 +7,13 @@
 </head>
 <body>
 <div class="mainContainer">
-    <h2>Nákup vstupenek</h2>
-    <div class="d-flex justify-content-center">
+        <div class="d-flex justify-content-center">
         <div class="selectContainer d-flex justify-content-center align-content-center">
+            <h2>Nákup vstupenek</h2>
             <div class="topContainer">
-                <div>Typ</div>
-                <div>Cena</div>
-                <div>Množství</div>
+                <div class="flexStart">Typ</div>
+                <div class="flexCenter">Cena</div>
+                <div class="flexEnd">Množství</div>
             </div>
             <div class="adultContainer d-flex">
                 <div class="flexStart">Dospělý</div>
@@ -22,24 +22,28 @@
                        min="0" max="20">
             </div>
             <div class="adultContainer">
-                <div class="flexStart">Dítě</div>
+            <div class="flexStart">Dítě</div>
+            <div class="flexCenter">200 Kč</div>
+            <input class="flexEnd" type="number" id="tentacles2" name="tentacles"
+                   min="0" max="20">
+        </div>
+            <div class="adultContainer">
+                <div class="flexStart">Senior</div>
                 <div class="flexCenter">200 Kč</div>
-                <input class="flexEnd" type="number" id="tentacles2" name="tentacles"
+                <input class="flexEnd" type="number" id="tentacles3" name="tentacles"
                        min="0" max="20">
             </div>
             <div class="adultContainer">
-                <div>Senior</div>
-                <div>200 Kč</div>
-                <input type="number" id="tentacles3" name="tentacles"
-                       min="0" max="20">
-            </div>
-            <div class="adultContainer">
-                <div>Student</div>
-                <div>180 Kč</div>
-                <input type="number" id="tentacles4" name="tentacles"
+                <div class="flexStart">Student</div>
+                <div class="flexCenter">180 Kč</div>
+                <input class="flexEnd" type="number" id="tentacles4" name="tentacles"
                        min="0" max="20">
             </div>
         </div>
+    </div>
+    <div class="buttons">
+        <button class="btn">Zpět</button>
+        <button class="btn btn-danger">Další</button>
     </div>
 </div>
 </body>
