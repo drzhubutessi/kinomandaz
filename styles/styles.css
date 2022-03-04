@@ -11141,7 +11141,6 @@ textarea.form-control-lg {
 
 .adultContainer {
   display: flex;
-  gap: 35vh;
   margin: 2vh;
   flex-direction: row;
   border-bottom: #868282 dotted 2px;
@@ -11171,7 +11170,23 @@ textarea.form-control-lg {
 }
 
 .buttons {
-  margin-left: 110vh;
+  display: flex;
+  justify-content: right;
+}
+
+@media screen and (max-width: 900px) {
+  .topContainer {
+    gap: 5vh;
+  }
+}
+.buttonSeat {
+  height: 2vh;
+  width: 2vh;
+}
+
+.seatsContainer {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .navbar {

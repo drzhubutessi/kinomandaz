@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <title>Nákup Lístků</title>
     <link rel="stylesheet" href="styles/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 <body>
 <div class="mainContainer">
@@ -18,33 +20,34 @@
             <div class="adultContainer d-flex">
                 <div class="flexStart">Dospělý</div>
                 <div class="flexCenter">300 Kč</div>
-                <input class="flexEnd" type="number" id="tentacles1" name="tentacles"
-                       min="0" max="20">
+                <input class="flexEnd form-control" type="number" id="tentacles1" name="tentacles"
+                       min="0" max="20" placeholder="0">
             </div>
             <div class="adultContainer">
             <div class="flexStart">Dítě</div>
             <div class="flexCenter">200 Kč</div>
-            <input class="flexEnd" type="number" id="tentacles2" name="tentacles"
-                   min="0" max="20">
+            <input class="flexEnd form-control" type="number" id="tentacles2" name="tentacles"
+                   min="0" max="20" placeholder="0">
         </div>
             <div class="adultContainer">
                 <div class="flexStart">Senior</div>
                 <div class="flexCenter">200 Kč</div>
-                <input class="flexEnd" type="number" id="tentacles3" name="tentacles"
-                       min="0" max="20">
+                <input class="flexEnd form-control" type="number" id="tentacles3" name="tentacles"
+                       min="0" max="20" placeholder="0">
             </div>
             <div class="adultContainer">
                 <div class="flexStart">Student</div>
                 <div class="flexCenter">180 Kč</div>
-                <input class="flexEnd" type="number" id="tentacles4" name="tentacles"
-                       min="0" max="20">
+                <input class="flexEnd form-control" type="number" id="tentacles4" name="tentacles"
+                       min="0" max="20" placeholder="0">
+            </div>
+            <div class="buttons d-md-flex">
+                <button class="btn">Zpět</button>
+                <button class="btn btn-danger">Další</button>
             </div>
         </div>
     </div>
-    <div class="buttons">
-        <button class="btn">Zpět</button>
-        <button class="btn btn-danger">Další</button>
-    </div>
+
 </div>
 </body>
 </html>

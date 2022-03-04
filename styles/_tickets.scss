@@ -28,7 +28,6 @@ $flexWidth: 10vh;
 
 .adultContainer {
   display: flex;
-  gap: 35vh;
   margin: $margin;
   flex-direction: row;
   border-bottom: #868282 dotted 2px;
@@ -57,5 +56,11 @@ $flexWidth: 10vh;
   margin-left: auto;
 }
 .buttons{
- margin-left: 110vh;
+display: flex;
+  justify-content: right;
+}
+@media screen and (max-width: 900px) {
+  .topContainer {
+    gap: 5vh;
+  }
 }
