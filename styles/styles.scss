@@ -1,17 +1,16 @@
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
 @import "tickets";
 @import "seats";
-
-$highlight : #FF4B4B;
-
-.navbar{
+@import "apitest";
+$highlight: #FF4B4B;
+.navbar {
     font-family: Bahnschrift, sans-serif;
 }
 
-.navbar-brand{
+.navbar-brand {
     font-size: 40px;
 }
 
-.active{
+.active {
     color: $highlight;
 }
