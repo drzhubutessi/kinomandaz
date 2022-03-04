@@ -12,6 +12,6 @@ window.onload = async () => {
     for (let i = 0; i < movies.length; i++) {
         const name = document.createElement('p');
         name.innerText = movies.name;
-        name.appendChild(container);
+        container.appendChild(name);
     }
 };
