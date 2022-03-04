@@ -1,6 +1,6 @@
 window.onload = async () => {
     const container = document.getElementById('adminData');
-    const b = await fetch('http://localhost:80/api/movies').then((response) => response.json());
+    const b = await fetch('http://whofucking.farted.net/api/movies').then((response) => response.json());
 
     let movies = [];
 
