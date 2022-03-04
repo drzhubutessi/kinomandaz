@@ -7,6 +7,7 @@ window.onload = async () => {
 
     for (let i = 0; i < b.length; i++) {
         const e = b[i];
+        console.log(e);
         movies += e;
     }
 
