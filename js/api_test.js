@@ -42,8 +42,8 @@ window.onload = async () => {
             entry.appendChild(name);
 
             const image = document.createElement('img');
-            image.width = '10vh';
-            image.height = '10vh';
+            image.width = '100';
+            image.height = '100';
             image.src = 'https://cdn.discordapp.com/attachments/769737832091615233/774211676203122708/image0.gif';
             entry.appendChild(image);
     
