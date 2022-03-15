@@ -27,10 +27,11 @@ window.onload = async () => {
         const dat = document.createElement('div');
         dat.classList.add('adminData');
         dat.id = 'adminData';
-        mid.appendChild(dat);
 
         const name = document.createElement('p');
         name.innerText = movies.name;
-        dataList.appendChild(name);
+        dat.appendChild(name);
+        mid.appendChild(dat);
+
     }
 };
