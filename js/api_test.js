@@ -42,8 +42,9 @@ window.onload = async () => {
             entry.appendChild(name);
 
             const image = document.createElement('img');
-            image.classList.add('adminImage');
-            image.src = e.image;
+            image.width = '10vh';
+            image.height = '10vh';
+            image.src = 'https://cdn.discordapp.com/attachments/769737832091615233/774211676203122708/image0.gif';
             entry.appendChild(image);
     
             dataList = document.getElementById('adminData');
