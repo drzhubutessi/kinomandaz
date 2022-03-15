@@ -1,7 +1,7 @@
 window.onload = async () => {
     const mid = document.getElementById('middle');
-    const dataList = document.getElementById('adminData');
-    const b = await fetch('http://whofucking.farted.net/api/movies').then((response) => response.json());
+    let dataList = document.getElementById('adminData');
+    let b = await fetch('http://whofucking.farted.net/api/movies').then((response) => response.json());
 
     class Movie {
         constructor(id, name, description, ageRating, image, extraInfo) {
@@ -13,25 +13,39 @@ window.onload = async () => {
             this.extraInfo = extraInfo;
         }
     }
-
-    let movies = [];
-
-    for (let i = 0; i < b.length; i++) {
-        const e = b[i];
-        console.log(e);
-        movies += e;
-    }
-
-    for (let i = 0; i < movies.length; i++) {
+    
+    showList();
+    async function showList() {
+        dataList = document.getElementById('adminData');
         dataList.remove();
+        b = await fetch('http://whofucking.farted.net/api/movies').then((response) => response.json());
+
         const dat = document.createElement('div');
         dat.classList.add('adminData');
         dat.id = 'adminData';
-
-        const name = document.createElement('p');
-        name.innerText = movies.name;
-        dat.appendChild(name);
         mid.appendChild(dat);
 
+        const movies = [];
+        for (let i = 0; i < b.length; i++) {
+            movies[i] = new Movie(b[i].id, b[i].name, b[i].description, b[i].ageRating, b[i].image, b[i].extraInfo);
+        }
+
+        for (let i = 0; i < movies.length; i++) {
+            const e = movies[i];
+            
+            const entry = document.createElement('div');
+            entry.classList.add('adminEntry');
+    
+            const name = document.createElement('div');
+            name.classList.add('cName');
+            name.innerText = `${e.firstName} ${e.lastName}`;
+            entry.appendChild(name);
+    
+            dataList = document.getElementById('adminData');
+            dataList.appendChild(entry);
+
+        }
     }
+
+    
 };

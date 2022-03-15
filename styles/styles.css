@@ -11398,6 +11398,26 @@ body {
   background-color: whitesmoke;
 }
 
+.adminEntry {
+  background-color: white;
+  border-radius: 0.3vh;
+  margin: 1vh;
+  padding: 1vh;
+  width: 60vh;
+  height: auto;
+  border-bottom: 0.1vh solid #ebebeb;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  box-shadow: 0 0 0.2vh black;
+}
+
+.adminName {
+  font-size: 2vh;
+  margin-left: 0.5vh;
+  color: #111111;
+}
+
 .navbar {
   font-family: Bahnschrift, sans-serif;
 }
