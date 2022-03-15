@@ -37,9 +37,14 @@ window.onload = async () => {
             entry.classList.add('adminEntry');
     
             const name = document.createElement('div');
-            name.classList.add('cName');
-            name.innerText = `${e.firstName} ${e.lastName}`;
+            name.classList.add('adminName');
+            name.innerText = `${e.id} ${e.name} ${e.description}`;
             entry.appendChild(name);
+
+            const image = document.createElement('img');
+            image.classList.add('adminImage');
+            image.src = e.image;
+            entry.appendChild(image);
     
             dataList = document.getElementById('adminData');
             dataList.appendChild(entry);

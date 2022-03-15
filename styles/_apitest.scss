@@ -35,6 +35,7 @@ body {
 
 .adminData {
     display: flex;
+    flex-direction: column;
     width: 80%;
     height: 80vh;
     background-color: whitesmoke;
@@ -58,4 +59,9 @@ body {
     font-size: 2vh;
     margin-left: 0.5vh;
     color: rgb(17, 17, 17);
+}
+
+.adminImage {
+    width: 10vh;
+    height: 10vh;
 }
